@@ -1,3 +1,5 @@
+import type { ReactNode } from 'react'
+
 export interface ProjectData {
   title: string
   link?: string
@@ -44,5 +46,6 @@ export interface ChatMessage {
   role: 'user' | 'bot' | 'typing'
   text?: string
   html?: string
-  component?: React.ReactNode
+  node?: ReactNode
+  component?: ReactNode
 }
